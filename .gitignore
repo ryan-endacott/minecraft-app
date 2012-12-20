@@ -3,3 +3,6 @@
 
 # Ignore the config
 /config.js
+
+# Ignore logs
+/*.log
