@@ -7,6 +7,11 @@ var mcserver = require('../mcserver'),
 
 
 exports.login = function(req, res){
+
+	// Redirect to admin if logged in.
+	if (req.user)
+		res.redirect('/admin');
+
 	res.render('login', {title: config.appName});
 };
 

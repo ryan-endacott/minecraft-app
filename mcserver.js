@@ -31,6 +31,10 @@ exports.start = function() {
 exports.stop = function() {
 	if (mcServer) {
 		mcServer.stdin.write('stop\n');
+
+		// I've decided to go ahead and set it to null here, although
+		// the process hasn't officially ended yet.  It makes it much simpler for client.
+		mcServer = null; 
 	}
 };
 

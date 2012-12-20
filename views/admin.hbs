@@ -1,7 +1,8 @@
 <div class="row">
-	<div id="admininterface" class="span6 offset3">
+	<div id="admininterface" class="span3 offset4">
 		<h2>Server Admin Panel</h2>
 		<hr>
+		<p>Welcome {{user}}!</p>
 		<p>The server is currently {{status}}.</p>
 		{{#running}}
 			<a href="/stop" class="btn btn-danger">Click to stop the server.</a>
@@ -9,6 +10,7 @@
 		{{^running}}
 			<a href="/start" class="btn btn-success">Click to start the server</a>
 		{{/running}}
+		<a href="/logout" class="btn btn-danger pull-right">Logout</a>
 		
 	</div>
 </div>

@@ -1,12 +1,9 @@
 <div class="row">
 	<div id="logininterface" class="span3 offset4">
-		<form class="form-signin">
+		<form action="/login" method="post" class="form-signin">
 		    <h2 class="form-signin-heading">Please sign in</h2>
-		        <input type="text" class="input-block-level" placeholder="Username">
-		        <input type="password" class="input-block-level" placeholder="Password">
-		        <label class="checkbox">
-		          <input type="checkbox" value="remember-me"> Remember me
-		        </label>
+		        <input name="username" type="text" class="input-block-level" placeholder="Username">
+		        <input name="password" type="password" class="input-block-level" placeholder="Password">
 		        <button class="btn btn-large btn-inverse" type="submit">Sign in</button>
 		</form>
 	</div>
