@@ -1,0 +1,5 @@
+# Don't save compiled CSS
+*.css
+
+# Ignore the config
+/config.js

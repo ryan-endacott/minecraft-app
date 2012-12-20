@@ -1,0 +1,39 @@
+
+// Routes
+
+
+var mcserver = require('../mcserver'),
+	config = require('../config');
+
+
+exports.login = function(req, res){
+	res.render('login', {title: config.appName});
+};
+
+exports.start = function(req, res){
+	if (req) {
+		mcserver.start();
+		res.redirect('/admin');
+	}
+	else
+		res.redirect('/');
+};
+
+exports.stop = function(req, res) {
+	if (req) {
+		mcserver.stop();
+		res.redirect('/admin');
+	}
+	else
+		res.redirect('/');
+
+};
+
+exports.admin = function(req, res){
+	res.render('admin', {
+		title: config.appName,
+		status: mcserver.status, 
+		running: mcserver.running
+	});
+};
+

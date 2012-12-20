@@ -1,0 +1,54 @@
+
+@import "bootstrapless/variables.less"; // Modify this for custom colors, font-sizes, etc
+@import "bootstrapless/mixins.less";
+
+
+body {
+	padding-top: 120px;
+	background-color: #111;
+	background-image: url(/img/mcbg.png);
+}
+
+
+.center.navbar .nav,
+.center.navbar .brand,
+.center.navbar .nav > li {
+    float:none;
+    display:inline-block;
+    *display:inline; /* ie7 fix */
+    *zoom:1; /* hasLayout ie7 trigger */
+    vertical-align: middle;
+}
+
+.center .navbar-inner {
+    text-align:center;
+}
+
+.center .dropdown-menu {
+    text-align: left;
+}
+
+
+#mcnavbar .brand {
+	line-height: 30px;
+	color: #B9B9B9;
+	font-weight: bold;
+}
+
+#mcnavbar .navbar-inner {
+	background-image: url(/img/mcheader.png);
+}
+
+.interface {
+	background-color: white;
+	padding: 20px;
+	.border-radius(5px);
+}
+
+#logininterface {
+	.interface;
+}
+
+#admininterface {
+	.interface;
+}
