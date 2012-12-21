@@ -26,5 +26,5 @@ module.exports = config;
 
 ```
 
-Then just run the site (I use [Forever](https://github.com/nodejitsu/forever) so the service never goes down) and point your friends to http://YourIP:Port.  Happy crafting!
+Then just run the site (I use [Winser](https://github.com/jfromaniello/winser) so the service never goes down) and point your friends to http://YourIP:Port.  Happy crafting!
 
