@@ -44,6 +44,9 @@ exports.start = function() {
 				// So the 7th number has the info.
 				curNumPlayers = parseInt(strData.match(/[0-9]+/g)[6], 10);
 
+				// Make number of players available to other modules
+				exports.numPlayers = curNumPlayers;
+
 				gettingNumPlayers = false;
 			}
 
@@ -95,6 +98,10 @@ exports.status = function() {
 exports.running = function() {
 	return mcServer ? true : false;
 };
+
+
+// Returns number of players on server
+exports.numPlayers = curNumPlayers;
 
 // Function to update the variable curNumPlayers
 // It uses the stderr stream of mcserver set up above.

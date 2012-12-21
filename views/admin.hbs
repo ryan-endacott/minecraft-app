@@ -1,10 +1,13 @@
 <div class="row">
 	<div id="admininterface" class="span3 offset4">
-		<h2>Server Admin Panel</h2>
+		<h3>Server Admin Panel</h3>
 		<hr>
 		<p>Welcome {{user}}!</p>
 		<p>The server is currently {{status}}.</p>
 		{{#running}}
+		<p>
+			Number of players online: {{numPlayers}}
+		</p>
 			<a href="/stop" class="btn btn-danger">Click to stop the server.</a>
 		{{/running}}
 		{{^running}}

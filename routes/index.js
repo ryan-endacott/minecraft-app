@@ -38,7 +38,8 @@ exports.admin = function(req, res){
 	res.render('admin', {
 		title: config.appName,
 		status: mcserver.status, 
-		running: mcserver.running
+		running: mcserver.running,
+		numPlayers: mcserver.numPlayers
 	});
 };
 
